@@ -40,6 +40,10 @@ export default function Login({setUser}) {
       
     } else {
       response = await registerUser({ email, password, username });
+      showAlert({
+        msg: `thanks for register please login`
+      });
+      navigate('/')
     }
     //navigate('/products');
 
